@@ -37,6 +37,16 @@ venv/
 env/
 .env
 
+# ── Rizzmatics // After Hours (PRIVATE — never commit) ───────────
+# The private lore package and its secrets live only on the local/private
+# build. The public repository must contain none of it: no protocol
+# vocabulary, no clue, no birthdays, no password. Guarded by
+# scripts/check_no_private_leak.py + tests/test_public_private_separation.py.
+/private/**
+/private/
+.streamlit/secrets.toml
+.streamlit/
+
 # ── OS / editor cruft ────────────────────────────────────────────
 .DS_Store
 .idea/

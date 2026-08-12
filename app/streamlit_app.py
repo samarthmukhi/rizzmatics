@@ -25,9 +25,11 @@ from app.components.pipeline import (  # noqa: E402
     RizzBundle,
     load_demo_text,
     run_pipeline,
+    run_research,
     session_full_features,
     session_prefix_features,
 )
+from src.research.safety import SAFETY_WARNING, is_probably_real_conversation  # noqa: E402
 from app.components.theme import disclaimer, hero, inject_theme  # noqa: E402
 from src.engagement import ENGAGEMENT_DISCLAIMER  # noqa: E402
 from src.features import FEATURE_NAMES  # noqa: E402
@@ -54,6 +56,7 @@ PAGES = [
     "📈 Signal Analytics",
     "🔮 Rizzmatics Oracle™",
     "🧪 Model Lab",
+    "🔬 Research Lab",
     "📐 Methodology",
     "🔒 Privacy Center",
 ]
@@ -62,7 +65,7 @@ PAGES = [
 # --------------------------------------------------------------------------- #
 # Sidebar: data source + knobs
 # --------------------------------------------------------------------------- #
-def sidebar() -> tuple[str, dict, str]:
+def sidebar() -> tuple[str, dict, str, str]:
     st.sidebar.markdown("### RIZZMATICS")
     st.sidebar.caption("Applied mathematics for completely unnecessary flirting.")
 
@@ -98,7 +101,7 @@ def sidebar() -> tuple[str, dict, str]:
         inactivity_hours=inactivity, prefix=prefix, high_percentile=float(high_pct),
         weights=(w_dur, w_vol, w_bi, w_bal, w_per), dayfirst=None,
     )
-    return text, params, page
+    return text, params, page, source
 
 
 # --------------------------------------------------------------------------- #
@@ -319,6 +322,81 @@ def page_model_lab(bundle: RizzBundle) -> None:
         st.caption("↑ moves with engagement, ↓ moves against it. Descriptive only.")
 
 
+def page_research(bundle: RizzBundle, text: str, params: dict, source: str) -> None:
+    hero("Research Lab — where we check how much confidence we actually deserve.")
+
+    st.error("**SYNTHETIC DATA — RESULTS ARE NOT REAL-WORLD VALIDATION.**"
+             if source.startswith("Demo") else
+             "**YOUR DATA — still not real-world validation of the method; "
+             "these are in-sample diagnostics on one small conversation.**")
+
+    research = run_research(
+        text, inactivity_hours=params["inactivity_hours"], prefix=params["prefix"],
+        weights=params["weights"], high_percentile=params["high_percentile"],
+        dayfirst=params["dayfirst"],
+    )
+    if "error" in research:
+        st.warning(research["error"])
+        return
+
+    if research["caveat"]:
+        st.warning(research["caveat"])
+    st.caption(f"All metrics are 3×5 repeated cross-validation, mean ± std, on "
+               f"{research['n_samples']} sessions. Read the spread, not just the mean.")
+
+    # ---- Sanity checks --------------------------------------------------- #
+    st.markdown("### 1 · Sanity checks — does the benchmark behave correctly?")
+    sanity = research["sanity"]
+    fig = px.bar(sanity, x="condition", y="ROC_AUC", color="condition",
+                 color_discrete_sequence=["#2e7d32", "#ff4d8d", "#7b61ff"])
+    fig.add_hline(y=0.5, line_dash="dash", annotation_text="chance (0.5)")
+    fig.update_layout(height=300, margin=dict(l=10, r=10, t=10, b=10), showlegend=False)
+    st.plotly_chart(fig, width="stretch")
+    st.dataframe(sanity.set_index("condition").style.format("{:.3f}"), width="stretch")
+    st.caption("Shuffled-target and null-control must fall to chance. They do — "
+               "that is the evidence the pipeline isn't leaking.")
+
+    # ---- Ablation -------------------------------------------------------- #
+    st.markdown("### 2 · Ablation — which signal families carry the information?")
+    anum = research["ablation_num"]
+    fig2 = px.bar(anum.sort_values("roc_auc_mean"), x="roc_auc_mean", y="condition",
+                  orientation="h", error_x="roc_auc_std",
+                  color_discrete_sequence=["#7b61ff"])
+    fig2.add_vline(x=0.5, line_dash="dash", annotation_text="chance")
+    fig2.update_layout(height=340, margin=dict(l=10, r=10, t=10, b=10))
+    st.plotly_chart(fig2, width="stretch")
+    st.dataframe(research["ablation_disp"], width="stretch")
+
+    # ---- Prefix curve ---------------------------------------------------- #
+    st.markdown("### 3 · Prefix length — how early does signal become useful?")
+    pnum = research["prefix_num"].copy()
+    fig3 = px.line(pnum, x="prefix", y="roc_auc_mean", markers=True,
+                   error_y="roc_auc_std", text="n_samples")
+    fig3.update_traces(line_color="#ff4d8d", textposition="top center")
+    fig3.add_hline(y=0.5, line_dash="dash", annotation_text="chance")
+    fig3.update_layout(height=340, margin=dict(l=10, r=10, t=10, b=10),
+                       yaxis_title="ROC-AUC", xaxis_title="observation window")
+    st.plotly_chart(fig3, width="stretch")
+    st.caption("Labels show n_samples. Larger fixed prefixes keep fewer, longer "
+               "sessions — the dip at 20–30 is partly that confound, not pure signal loss.")
+
+    # ---- Robustness ------------------------------------------------------ #
+    st.markdown("### 4 · Robustness — is one family doing all the work?")
+    lnum = research["logo_num"].copy()
+    lnum["removed"] = lnum["condition"].str.replace("minus_", "− ", regex=False)
+    fig4 = px.bar(lnum, x="removed", y="roc_auc_mean", error_y="roc_auc_std",
+                  color_discrete_sequence=["#ff4d8d"])
+    fig4.update_layout(height=320, margin=dict(l=10, r=10, t=10, b=10),
+                       yaxis_title="ROC-AUC (with that family removed)")
+    st.plotly_chart(fig4, width="stretch")
+    st.caption("Remove participation and the model collapses toward chance; remove "
+               "any other family and it barely moves. One family carries the result.")
+
+    disclaimer("Performance on synthetic data shows the pipeline recovers structured "
+               "relationships in the generated environment. It does NOT establish "
+               "generalization to real human conversations. See docs/technical_report.md.")
+
+
 def page_methodology(bundle: RizzBundle) -> None:
     hero("Methodology — the part that is, annoyingly, real science.")
     st.markdown(f"""
@@ -379,16 +457,27 @@ and `.gitignore` blocks `*.txt`, `*.csv`, `*.json`, and the `data/` tree.
 # --------------------------------------------------------------------------- #
 # Main
 # --------------------------------------------------------------------------- #
+# Pages 0–4 and 6–7 take just the bundle; the Research Lab (page 5) needs raw
+# text + params + source, so it's dispatched separately in main().
 _RENDERERS = {
     PAGES[0]: page_executive, PAGES[1]: page_explorer, PAGES[2]: page_analytics,
-    PAGES[3]: page_oracle, PAGES[4]: page_model_lab, PAGES[5]: page_methodology,
-    PAGES[6]: page_privacy,
+    PAGES[3]: page_oracle, PAGES[4]: page_model_lab, PAGES[6]: page_methodology,
+    PAGES[7]: page_privacy,
 }
 
 
 def main() -> None:
     inject_theme()
-    text, params, page = sidebar()
+
+    # Hidden After-Hours route (?after_hours=1). Intercepts before any public
+    # page renders and never appears in the sidebar nav. In the public build
+    # (no private lore package) this is inert and reveals nothing.
+    if st.query_params.get("after_hours") == "1":
+        from app.components.private_view import render_after_hours
+        render_after_hours(st)
+        return
+
+    text, params, page, source = sidebar()
 
     if not text:
         hero("Applied mathematics for completely unnecessary flirting.")
@@ -396,8 +485,16 @@ def main() -> None:
         st.info("Load the demo data or upload a WhatsApp `.txt` in the sidebar to begin.")
         return
 
+    # Real-data safety gate (Phase 19): warn if this looks like a real conversation.
+    if not source.startswith("Demo") and is_probably_real_conversation(text):
+        st.warning(f"🔒 {SAFETY_WARNING}")
+
     bundle = run_pipeline(text, **params)
-    _RENDERERS[page](bundle)
+
+    if page == PAGES[5]:
+        page_research(bundle, text, params, source)
+    else:
+        _RENDERERS[page](bundle)
 
     if page == PAGES[0]:
         with st.expander("The Final Rizzmatics Moment™"):

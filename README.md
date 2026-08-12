@@ -113,6 +113,40 @@ in-sample when it doesn't**. If you feed it 14 conversations, it will say:
 
 No manufacturing impressive statistics from tiny samples.
 
+## Scientific validation
+
+Rizzmatics ships with a full validation battery so you can check *where it's
+right, where it's wrong, and how much confidence it deserves*. Full write-up:
+[`docs/technical_report.md`](docs/technical_report.md). Regenerate all results:
+
+```bash
+python scripts/run_experiment.py --experiment all
+```
+
+On the synthetic demo (~31 sessions, first 10 messages, 5×5 CV, mean ± std):
+
+- **Sanity checks** — shuffled-target collapses to AUC 0.31 and the noise-only
+  **null control** to AUC 0.44 (chance). If either scored well, we'd suspect
+  leakage. They don't.
+- **Ablation** — predictive signal lives in **participation** (AUC 0.89) and
+  **response-latency** (AUC 0.89). Message content and calendar time score *at
+  chance* — correctly, because the generator encodes no signal there.
+- **Prefix sweep** — classification signal appears by the **first ~5 messages**;
+  the apparent dip at 20–30 is a sample-size confound (fewer, longer sessions),
+  reported with `n` at every point.
+- **Robustness** — remove participation and the model collapses (AUC 0.89→0.61);
+  remove any other family and it barely moves. **One family does most of the work.**
+
+**Generator honesty:** the demo's latent variable is a per-session *archetype*
+that drives features **and** the target, so the task is closer to recovering a
+hidden label than open-world prediction (see `GENERATOR_METADATA` in
+[`scripts/generate_demo_data.py`](scripts/generate_demo_data.py)). With only ~31
+sessions, every metric is a fragile point estimate with wide error bars.
+
+> **Performance on synthetic data demonstrates that the pipeline can recover
+> structured relationships in the generated environment. It does not establish
+> generalization to real human conversations.**
+
 ---
 
 ## The features (Rizz Engine™ intake)
@@ -148,14 +182,18 @@ telemetry, no uploads. `.gitignore` blocks `*.txt`, `*.csv`, `*.json`, and the
 
 ```text
 rizzmatics/
-├── app/                    # Streamlit dashboard (7 pages)
+├── app/                    # Streamlit dashboard (8 pages, incl. Research Lab)
 │   ├── streamlit_app.py
 │   └── components/
 ├── src/                    # The actual science
 │   ├── parser.py  sessions.py  features.py  engagement.py
 │   ├── preprocessing.py  models.py  evaluation.py  rizz.py
-├── tests/                  # 104 tests, incl. leakage guards
-├── scripts/generate_demo_data.py
+│   └── research/           # sanity · ablation · prefix · robustness ·
+│       │                   #   nulldata · registry · safety · experiment
+├── tests/                  # 168 tests, incl. leakage + null-control guards
+├── scripts/                # generate_demo_data.py · run_experiment.py · rizzmatics.py
+├── experiments/            # reproducible experiment records (git-ignored, regenerable)
+├── docs/technical_report.md
 ├── data/demo/              # synthetic exports only
 └── requirements.txt  pyproject.toml  LICENSE
 ```

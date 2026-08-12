@@ -126,6 +126,79 @@ def _empty_frame():
     return pd.DataFrame(columns=FEATURE_NAMES)
 
 
+@st.cache_data(show_spinner="Running the full research battery (~30s, real cross-validation)...")
+def run_research(
+    text: str,
+    *,
+    inactivity_hours: float,
+    prefix: int,
+    weights: tuple,
+    high_percentile: float,
+    dayfirst: bool | None,
+    n_repeats: int = 3,
+) -> dict:
+    """Run the scientific-validation battery for the Research Lab page (cached).
+
+    Returns plain DataFrames/dicts so the result is cache-friendly. Rebuilds the
+    dataset from the same inputs as run_pipeline; kept separate so the expensive
+    cross-validation only runs when the Research Lab is actually opened.
+    """
+    import numpy as np
+    import pandas as pd
+
+    from src.research.ablation import ablation_table, run_ablation
+    from src.research.experiment import small_data_caveat
+    from src.research.nulldata import make_null_dataset
+    from src.research.prefix import prefix_table, run_prefix_sweep
+    from src.research.robustness import leave_one_group_out, robustness_table
+    from src.research.sanity import run_normal, run_shuffled_target
+
+    messages = parse_chat(text, dayfirst=dayfirst)
+    sessions = detect_sessions(messages, inactivity_hours=inactivity_hours)
+    cfg = EngagementConfig(weights={
+        "duration": weights[0], "volume": weights[1], "bidirectional": weights[2],
+        "balance": weights[3], "persistence": weights[4]})
+
+    try:
+        ds = build_dataset(sessions, prefix=prefix, high_percentile=high_percentile,
+                           engagement_config=cfg)
+    except ValueError as exc:
+        return {"error": str(exc)}
+
+    # Sanity: normal / shuffled / null.
+    normal = run_normal(ds, n_repeats=n_repeats)
+    shuffled = run_shuffled_target(ds, n_repeats=n_repeats)
+    null = run_normal(make_null_dataset(n_samples=120, seed=0), n_repeats=n_repeats)
+    sanity = pd.DataFrame([
+        {"condition": "Normal (real target)", "R2": normal.regression.mean("R2"),
+         "F1": normal.classification.mean("f1"), "ROC_AUC": normal.classification.mean("roc_auc")},
+        {"condition": "Shuffled target", "R2": shuffled.regression.mean("R2"),
+         "F1": shuffled.classification.mean("f1"), "ROC_AUC": shuffled.classification.mean("roc_auc")},
+        {"condition": "Null control (noise)", "R2": null.regression.mean("R2"),
+         "F1": null.classification.mean("f1"), "ROC_AUC": null.classification.mean("roc_auc")},
+    ])
+
+    ablation_rows = run_ablation(ds, n_repeats=n_repeats)
+    ablation_num = ablation_table(ablation_rows)
+    ablation_disp = ablation_table(ablation_rows, formatted=True)
+
+    prefix_rows = run_prefix_sweep(sessions, n_repeats=n_repeats)
+    prefix_num = prefix_table(prefix_rows)
+
+    logo_rows = leave_one_group_out(ds, n_repeats=n_repeats)
+    logo_num = robustness_table(logo_rows)
+
+    return {
+        "n_samples": len(ds),
+        "caveat": small_data_caveat(len(ds)),
+        "sanity": sanity,
+        "ablation_num": ablation_num,
+        "ablation_disp": ablation_disp,
+        "prefix_num": prefix_num,
+        "logo_num": logo_num,
+    }
+
+
 def session_prefix_features(bundle: RizzBundle, session_id: int, prefix: int) -> dict:
     """Extract the prefix features for a single session (for the Oracle page)."""
     from src.features import extract_features

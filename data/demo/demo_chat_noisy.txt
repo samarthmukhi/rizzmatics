@@ -1,0 +1,758 @@
+01/04/2026, 08:55 - Messages and calls are end-to-end encrypted. No one outside of this chat, not even WhatsApp, can read or listen to them.
+01/04/2026, 18:14 - Alex: hii just pushed to main sorry
+01/04/2026, 18:53 - Alex: is the deadline friday or monday?
+04/04/2026, 10:58 - Alex: yo have you started studying yet?
+04/04/2026, 11:41 - Sam: the campus tour was actually fun
+04/04/2026, 12:13 - Sam: found a bug in my own code again
+04/04/2026, 12:22 - Sam: wanna call?
+04/04/2026, 12:31 - Alex: lol 💀
+04/04/2026, 12:44 - Sam: is the deadline friday or monday?
+04/04/2026, 13:28 - Alex: wanna call?
+04/04/2026, 13:28 - Alex: 😭😭😭 real
+04/04/2026, 14:11 - Alex: check this out https://example.com/thing
+04/04/2026, 14:55 - Alex: i think i finally understand recursion
+04/04/2026, 15:16 - Sam: coffee is the only thing keeping me alive
+04/04/2026, 16:00 - Sam: i got the internship!!
+04/04/2026, 16:04 - Alex: yesss 🙌
+04/04/2026, 16:23 - Sam: i can't stop thinking about this idea
+04/04/2026, 16:28 - Alex: the campus tour was actually fun
+04/04/2026, 16:29 - Sam: should we start that project
+04/04/2026, 16:59 - Sam: 🔥🔥
+04/04/2026, 17:18 - Alex: i think i finally understand recursion
+04/04/2026, 17:30 - Alex: how was your day
+04/04/2026, 18:17 - Alex: i got the internship!!
+04/04/2026, 18:53 - Sam: what time works for you?
+04/04/2026, 19:36 - Alex: are you free tonight?
+06/04/2026, 10:52 - Alex: random but did you see the email?
+06/04/2026, 11:23 - Sam: did you finish the assignment
+06/04/2026, 12:38 - Alex: wait what did you mean by that?
+06/04/2026, 14:25 - Sam: the wifi in the library is criminal
+06/04/2026, 16:18 - Alex: i've been debugging this for 2 hours
+06/04/2026, 18:12 - Sam: <Media omitted>
+06/04/2026, 19:27 - Alex: haha 😂
+06/04/2026, 20:40 - Sam: wait what did you mean by that?
+06/04/2026, 22:18 - Alex: just pushed to main sorry
+07/04/2026, 00:04 - Sam: did you see the email?
+10/04/2026, 07:33 - Alex: quick q LETS GOOO
+10/04/2026, 07:36 - Sam: i can't stop thinking about this idea
+10/04/2026, 07:37 - Alex: i can't stop thinking about this idea
+10/04/2026, 07:40 - Sam: we should build something this weekend
+10/04/2026, 07:43 - Alex: i've been debugging this for 2 hours
+10/04/2026, 07:47 - Sam: should we meet at the union?
+10/04/2026, 07:49 - Alex: is the deadline friday or monday?
+10/04/2026, 07:49 - Sam: have you started studying yet?
+10/04/2026, 07:49 - Alex: how was your day
+10/04/2026, 07:53 - Sam: 🔥🔥
+10/04/2026, 07:54 - Alex: just pushed to main sorry
+10/04/2026, 07:55 - Sam: aw 🥹
+10/04/2026, 07:56 - Alex: should we meet at the union?
+10/04/2026, 07:56 - Sam: the demo actually worked first try
+10/04/2026, 07:57 - Alex: LETS GOOO
+10/04/2026, 07:58 - Sam: this lecture was so dry ngl
+10/04/2026, 07:59 - Alex: what time works for you?
+10/04/2026, 08:01 - Sam: the demo actually worked first try
+10/04/2026, 08:02 - Alex: did you finish the assignment
+10/04/2026, 08:06 - Sam: i've been debugging this for 2 hours
+10/04/2026, 08:09 - Alex: aw 🥹
+10/04/2026, 08:10 - Sam: okay this is fire
+10/04/2026, 08:12 - Alex: lol 💀
+10/04/2026, 08:16 - Sam: the repo is at https://github.com/example/project
+10/04/2026, 08:17 - Alex: what time works for you?
+10/04/2026, 08:19 - Sam: i pulled an all nighter oops
+10/04/2026, 08:23 - Alex: haha 😂
+10/04/2026, 08:25 - Sam: yesss 🙌
+10/04/2026, 08:26 - Alex: i keep getting merge conflicts
+10/04/2026, 08:29 - Sam: wanna call?
+10/04/2026, 08:30 - Alex: www.example.edu/deadlines
+10/04/2026, 08:31 - Sam: what time works for you?
+10/04/2026, 08:32 - Alex: i keep getting merge conflicts
+10/04/2026, 08:34 - Sam: LETS GOOO
+10/04/2026, 08:37 - Alex: haha 😂
+10/04/2026, 08:39 - Sam: i keep getting merge conflicts
+10/04/2026, 08:43 - Alex: the professor lowkey ate today
+10/04/2026, 08:46 - Sam: found a bug in my own code again
+10/04/2026, 08:47 - Alex: found a bug in my own code again
+10/04/2026, 08:50 - Sam: how was your day
+10/04/2026, 08:51 - Alex: this lecture was so dry ngl
+10/04/2026, 08:54 - Sam: what time works for you?
+10/04/2026, 08:55 - Alex: i keep getting merge conflicts
+10/04/2026, 08:56 - Sam: did you see the email?
+10/04/2026, 08:58 - Alex: have you started studying yet?
+10/04/2026, 09:01 - Sam: i can't stop thinking about this idea
+10/04/2026, 09:03 - Alex: should we meet at the union?
+10/04/2026, 09:04 - Sam: yesss 🙌
+10/04/2026, 09:08 - Alex: wait what did you mean by that?
+10/04/2026, 09:09 - Sam: goodnight
+11/04/2026, 08:47 - Sam: quick q i keep getting merge conflicts
+11/04/2026, 08:52 - Sam: found a bug in my own code again
+11/04/2026, 09:05 - Alex: what time works for you?
+11/04/2026, 09:39 - Alex: the wifi in the library is criminal
+11/04/2026, 10:00 - Sam: i'm literally so hyped
+11/04/2026, 10:17 - Sam: wanna grab food later
+11/04/2026, 10:53 - Alex: coffee is the only thing keeping me alive
+11/04/2026, 11:39 - Sam: is the deadline friday or monday?
+11/04/2026, 11:55 - Sam: wait what did you mean by that?
+11/04/2026, 12:17 - Alex: are you free tonight?
+11/04/2026, 12:28 - Sam: i think i finally understand recursion
+11/04/2026, 12:47 - Alex: i keep getting merge conflicts
+11/04/2026, 12:48 - Sam: wait what did you mean by that?
+11/04/2026, 12:49 - Alex: we should build something this weekend
+13/04/2026, 06:13 - Alex: guess what did you finish the assignment
+13/04/2026, 06:32 - Alex: have you started studying yet?
+13/04/2026, 07:06 - Sam: gtg
+15/04/2026, 09:11 - Sam: ok so the repo is at https://github.com/example/project
+15/04/2026, 09:13 - Sam: the wifi in the library is criminal
+15/04/2026, 09:25 - Alex: aw 🥹
+15/04/2026, 09:34 - Alex: did you finish the assignment
+15/04/2026, 10:05 - Sam: how was your day
+15/04/2026, 10:31 - Sam: is the deadline friday or monday?
+15/04/2026, 11:03 - Alex: this lecture was so dry ngl
+15/04/2026, 11:39 - Sam: are you free tonight?
+15/04/2026, 11:54 - Alex: should we start that project
+15/04/2026, 12:18 - Sam: this lecture was so dry ngl
+15/04/2026, 12:44 - Alex: i think i finally understand recursion
+15/04/2026, 12:53 - Sam: the wifi in the library is criminal
+15/04/2026, 13:41 - Alex: wait what did you mean by that?
+15/04/2026, 14:26 - Sam: is the deadline friday or monday?
+15/04/2026, 14:31 - Alex: the professor lowkey ate today
+15/04/2026, 15:05 - Alex: i pulled an all nighter oops
+15/04/2026, 15:08 - Alex: i can't stop thinking about this idea
+15/04/2026, 15:11 - Alex: wanna grab food later
+15/04/2026, 15:39 - Alex: www.example.edu/deadlines
+15/04/2026, 15:56 - Alex: LETS GOOO
+15/04/2026, 16:14 - Alex: www.example.edu/deadlines
+15/04/2026, 17:01 - Alex: i can't stop thinking about this idea
+15/04/2026, 17:27 - Alex: are you free tonight?
+15/04/2026, 17:55 - Alex: wanna grab food later
+15/04/2026, 18:19 - Sam: the campus tour was actually fun
+15/04/2026, 19:06 - Alex: how was your day
+15/04/2026, 19:37 - Sam: coffee is the only thing keeping me alive
+15/04/2026, 20:14 - Sam: the repo is at https://github.com/example/project
+15/04/2026, 20:34 - Alex: found a bug in my own code again
+15/04/2026, 20:36 - Alex: aw 🥹
+15/04/2026, 21:08 - Alex: have you started studying yet?
+15/04/2026, 21:18 - Alex: should we meet at the union?
+15/04/2026, 21:43 - Sam: did you see the email?
+17/04/2026, 23:11 - Sam: ok so i've been debugging this for 2 hours
+17/04/2026, 23:14 - Sam: the demo actually worked first try
+17/04/2026, 23:57 - Sam: we should build something this weekend
+18/04/2026, 00:32 - Sam: wait what did you mean by that?
+18/04/2026, 01:07 - Sam: i think i finally understand recursion
+18/04/2026, 01:25 - Alex: sticker omitted
+18/04/2026, 02:04 - Sam: coffee is the only thing keeping me alive
+18/04/2026, 02:36 - Alex: i keep getting merge conflicts
+18/04/2026, 03:03 - Sam: have you started studying yet?
+18/04/2026, 03:03 - Alex: <Media omitted>
+18/04/2026, 03:28 - Alex: the repo is at https://github.com/example/project
+18/04/2026, 04:03 - Alex: how was your day
+18/04/2026, 04:18 - Alex: the professor lowkey ate today
+18/04/2026, 04:23 - Alex: we should build something this weekend
+18/04/2026, 05:07 - Sam: wanna grab food later
+18/04/2026, 05:11 - Alex: sticker omitted
+18/04/2026, 10:45 - Alex: quick q did you see the email?
+18/04/2026, 11:26 - Sam: that's actually huge
+18/04/2026, 11:47 - Alex: 😭😭😭 real
+18/04/2026, 11:59 - Sam: goodnight
+23/04/2026, 09:40 - Alex: you up? 😭😭😭 real
+23/04/2026, 09:46 - Sam: 😭😭😭 real
+23/04/2026, 09:50 - Sam: www.example.edu/deadlines
+23/04/2026, 09:55 - Alex: have you started studying yet?
+23/04/2026, 09:56 - Sam: the professor lowkey ate today
+23/04/2026, 09:57 - Sam: the demo actually worked first try
+23/04/2026, 10:00 - Alex: 😭😭😭 real
+23/04/2026, 10:02 - Sam: the repo is at https://github.com/example/project
+23/04/2026, 10:05 - Sam: we should build something this weekend
+23/04/2026, 10:06 - Alex: no way that's insane
+23/04/2026, 10:07 - Sam: what time works for you?
+23/04/2026, 10:13 - Sam: reading week cannot come soon enough
+23/04/2026, 10:16 - Alex: i think i finally understand recursion
+23/04/2026, 10:22 - Sam: found a bug in my own code again
+23/04/2026, 10:24 - Sam: have you started studying yet?
+23/04/2026, 10:29 - Alex: that's actually huge
+23/04/2026, 10:33 - Sam: did you see the email?
+23/04/2026, 10:35 - Sam: wait what did you mean by that?
+23/04/2026, 10:38 - Alex: did you finish the assignment
+23/04/2026, 10:38 - Sam: that's actually huge
+23/04/2026, 10:45 - Sam: i think i finally understand recursion
+23/04/2026, 10:51 - Alex: the demo actually worked first try
+23/04/2026, 10:56 - Sam: did you see the email?
+23/04/2026, 11:02 - Sam: the campus tour was actually fun
+23/04/2026, 11:02 - Alex: no way that's insane
+23/04/2026, 11:03 - Sam: we should build something this weekend
+23/04/2026, 11:05 - Sam: the demo actually worked first try
+23/04/2026, 11:09 - Alex: did you finish the assignment
+23/04/2026, 11:15 - Sam: the wifi in the library is criminal
+23/04/2026, 11:16 - Sam: i've been debugging this for 2 hours
+23/04/2026, 11:22 - Alex: is the deadline friday or monday?
+23/04/2026, 11:26 - Sam: did you finish the assignment
+23/04/2026, 11:31 - Sam: wanna call?
+23/04/2026, 11:35 - Alex: www.example.edu/deadlines
+23/04/2026, 11:36 - Sam: just pushed to main sorry
+28/04/2026, 04:15 - Alex: ok so just pushed to main sorry
+28/04/2026, 04:19 - Sam: the campus tour was actually fun
+28/04/2026, 04:19 - Alex: this lecture was so dry ngl
+28/04/2026, 04:20 - Sam: 😭😭😭 real
+28/04/2026, 04:23 - Alex: i've been debugging this for 2 hours
+28/04/2026, 04:23 - Sam: the demo actually worked first try
+28/04/2026, 04:26 - Alex: i can't stop thinking about this idea
+28/04/2026, 04:27 - Sam: 😭😭😭 real
+28/04/2026, 04:28 - Alex: did you see the email?
+28/04/2026, 04:29 - Sam: okay this is fire
+28/04/2026, 04:30 - Alex: haha 😂
+28/04/2026, 04:33 - Sam: lol 💀
+28/04/2026, 04:34 - Alex: i can't stop thinking about this idea
+28/04/2026, 04:38 - Sam: coffee is the only thing keeping me alive
+28/04/2026, 04:40 - Alex: aw 🥹
+28/04/2026, 04:44 - Sam: how was your day
+28/04/2026, 04:44 - Alex: <Media omitted>
+28/04/2026, 04:47 - Sam: wait what did you mean by that?
+28/04/2026, 04:49 - Alex: wanna call?
+28/04/2026, 04:51 - Sam: wait what did you mean by that?
+28/04/2026, 04:54 - Alex: the professor lowkey ate today
+28/04/2026, 04:57 - Sam: lol 💀
+28/04/2026, 05:00 - Alex: what time works for you?
+28/04/2026, 05:04 - Sam: are you free tonight?
+28/04/2026, 05:08 - Alex: the campus tour was actually fun
+28/04/2026, 05:09 - Sam: reading week cannot come soon enough
+28/04/2026, 05:10 - Alex: i pulled an all nighter oops
+28/04/2026, 05:10 - Sam: should we start that project
+28/04/2026, 05:13 - Alex: lol 💀
+28/04/2026, 05:15 - Sam: the wifi in the library is criminal
+28/04/2026, 05:17 - Alex: the wifi in the library is criminal
+28/04/2026, 05:18 - Sam: i got the internship!!
+28/04/2026, 05:21 - Alex: just pushed to main sorry
+28/04/2026, 05:21 - Sam: the demo actually worked first try
+28/04/2026, 05:25 - Alex: did you finish the assignment
+28/04/2026, 05:28 - Sam: the demo actually worked first try
+28/04/2026, 05:30 - Alex: reading week cannot come soon enough
+28/04/2026, 05:32 - Sam: the campus tour was actually fun
+28/04/2026, 05:36 - Alex: wait what did you mean by that?
+28/04/2026, 05:37 - Sam: we should build something this weekend
+28/04/2026, 05:41 - Alex: okay this is fire
+28/04/2026, 05:43 - Sam: what time works for you?
+28/04/2026, 05:45 - Alex: just pushed to main sorry
+28/04/2026, 05:45 - Sam: found a bug in my own code again
+28/04/2026, 05:49 - Alex: LETS GOOO
+28/04/2026, 05:52 - Sam: check this out https://example.com/thing
+28/04/2026, 05:53 - Alex: coffee is the only thing keeping me alive
+28/04/2026, 05:54 - Sam: the campus tour was actually fun
+28/04/2026, 05:57 - Alex: i've been debugging this for 2 hours
+28/04/2026, 05:59 - Sam: lol 💀
+28/04/2026, 06:02 - Alex: i pulled an all nighter oops
+28/04/2026, 06:04 - Sam: have you started studying yet?
+28/04/2026, 06:06 - Alex: should we meet at the union?
+28/04/2026, 06:10 - Sam: have you started studying yet?
+28/04/2026, 06:12 - Alex: did you finish the assignment
+28/04/2026, 06:13 - Sam: i think i finally understand recursion
+28/04/2026, 06:14 - Alex: 🔥🔥
+28/04/2026, 06:15 - Sam: what time works for you?
+28/04/2026, 06:16 - Alex: sticker omitted
+28/04/2026, 06:16 - Sam: the repo is at https://github.com/example/project
+28/04/2026, 06:18 - Alex: have you started studying yet?
+28/04/2026, 06:21 - Sam: the professor lowkey ate today
+28/04/2026, 06:23 - Alex: are you free tonight?
+28/04/2026, 06:25 - Sam: i think i finally understand recursion
+28/04/2026, 06:25 - Alex: the demo actually worked first try
+30/04/2026, 09:40 - Sam: so 😭😭😭 real
+30/04/2026, 09:47 - Sam: i pulled an all nighter oops
+30/04/2026, 09:59 - Alex: the repo is at https://github.com/example/project
+30/04/2026, 10:42 - Alex: wanna grab food later
+30/04/2026, 11:02 - Alex: the demo actually worked first try
+30/04/2026, 11:42 - Alex: 🔥🔥
+30/04/2026, 12:07 - Sam: i'm literally so hyped
+30/04/2026, 12:49 - Sam: is the deadline friday or monday?
+30/04/2026, 13:08 - Sam: lol 💀
+30/04/2026, 13:21 - Sam: i can't stop thinking about this idea
+30/04/2026, 14:05 - Alex: should we start that project
+30/04/2026, 14:10 - Alex: this lecture was so dry ngl
+30/04/2026, 14:29 - Sam: okay this is fire
+30/04/2026, 14:59 - Alex: i think i finally understand recursion
+30/04/2026, 15:31 - Alex: image omitted
+30/04/2026, 15:40 - Alex: just pushed to main sorry
+30/04/2026, 15:56 - Sam: 😭😭😭 real
+30/04/2026, 16:12 - Sam: should we meet at the union?
+30/04/2026, 16:49 - Sam: the campus tour was actually fun
+30/04/2026, 17:28 - Sam: gtg
+02/05/2026, 09:39 - Alex: you up? did you finish the assignment
+02/05/2026, 09:43 - Alex: did you see the email?
+02/05/2026, 09:55 - Alex: the professor lowkey ate today
+02/05/2026, 10:00 - Alex: should we meet at the union?
+02/05/2026, 10:05 - Alex: the campus tour was actually fun
+02/05/2026, 10:14 - Alex: image omitted
+02/05/2026, 10:26 - Alex: wanna call?
+02/05/2026, 10:35 - Sam: are you free tonight?
+02/05/2026, 10:43 - Sam: wanna grab food later
+02/05/2026, 10:53 - Sam: yesss 🙌
+02/05/2026, 10:59 - Alex: that's actually huge
+02/05/2026, 11:07 - Alex: should we meet at the union?
+02/05/2026, 11:12 - Alex: just pushed to main sorry
+02/05/2026, 11:23 - Sam: just pushed to main sorry
+02/05/2026, 11:35 - Sam: just pushed to main sorry
+02/05/2026, 11:46 - Alex: the demo actually worked first try
+02/05/2026, 11:48 - Alex: did you finish the assignment
+02/05/2026, 11:53 - Alex: www.example.edu/deadlines
+07/05/2026, 09:54 - Alex: omg i keep getting merge conflicts
+07/05/2026, 09:56 - Sam: okay this is fire
+07/05/2026, 09:59 - Alex: wait what did you mean by that?
+07/05/2026, 10:00 - Sam: 🔥🔥
+07/05/2026, 10:02 - Alex: sticker omitted
+07/05/2026, 10:03 - Sam: just pushed to main sorry
+07/05/2026, 10:04 - Alex: should we start that project
+07/05/2026, 10:07 - Sam: 🔥🔥
+07/05/2026, 10:09 - Alex: check this out https://example.com/thing
+07/05/2026, 10:09 - Sam: the repo is at https://github.com/example/project
+07/05/2026, 10:12 - Alex: did you finish the assignment
+07/05/2026, 10:15 - Sam: okay this is fire
+07/05/2026, 10:19 - Alex: 😭😭😭 real
+07/05/2026, 10:22 - Sam: the campus tour was actually fun
+07/05/2026, 10:24 - Alex: the professor lowkey ate today
+07/05/2026, 10:28 - Sam: 🔥🔥
+07/05/2026, 10:28 - Alex: www.example.edu/deadlines
+07/05/2026, 10:30 - Sam: are you free tonight?
+07/05/2026, 10:32 - Alex: coffee is the only thing keeping me alive
+07/05/2026, 10:34 - Sam: how was your day
+07/05/2026, 10:36 - Alex: the wifi in the library is criminal
+07/05/2026, 10:39 - Sam: 😭😭😭 real
+07/05/2026, 10:42 - Alex: yesss 🙌
+07/05/2026, 10:42 - Sam: the campus tour was actually fun
+07/05/2026, 10:45 - Alex: what time works for you?
+07/05/2026, 10:49 - Sam: wait what did you mean by that?
+07/05/2026, 10:53 - Alex: should we start that project
+07/05/2026, 10:54 - Sam: sticker omitted
+07/05/2026, 10:56 - Alex: coffee is the only thing keeping me alive
+07/05/2026, 10:59 - Sam: how was your day
+07/05/2026, 11:01 - Alex: should we start that project
+07/05/2026, 11:03 - Sam: check this out https://example.com/thing
+07/05/2026, 11:05 - Alex: how was your day
+07/05/2026, 11:06 - Sam: wanna call?
+07/05/2026, 11:08 - Alex: the demo actually worked first try
+07/05/2026, 11:10 - Sam: the professor lowkey ate today
+07/05/2026, 11:11 - Alex: i can't stop thinking about this idea
+07/05/2026, 11:14 - Sam: i'm literally so hyped
+07/05/2026, 11:17 - Alex: found a bug in my own code again
+07/05/2026, 11:18 - Sam: 🔥🔥
+07/05/2026, 11:22 - Alex: the demo actually worked first try
+07/05/2026, 11:25 - Sam: sticker omitted
+07/05/2026, 11:26 - Alex: should we meet at the union?
+07/05/2026, 11:28 - Sam: should we start that project
+07/05/2026, 11:31 - Alex: lol 💀
+07/05/2026, 11:32 - Sam: is the deadline friday or monday?
+07/05/2026, 11:35 - Alex: just pushed to main sorry
+07/05/2026, 11:38 - Sam: did you finish the assignment
+07/05/2026, 11:39 - Alex: this lecture was so dry ngl
+07/05/2026, 11:41 - Sam: check this out https://example.com/thing
+07/05/2026, 11:43 - Alex: haha 😂
+07/05/2026, 11:44 - Sam: did you finish the assignment
+07/05/2026, 11:46 - Alex: no way that's insane
+07/05/2026, 11:48 - Sam: the wifi in the library is criminal
+07/05/2026, 11:50 - Alex: sticker omitted
+07/05/2026, 11:51 - Sam: image omitted
+07/05/2026, 11:53 - Alex: reading week cannot come soon enough
+07/05/2026, 11:57 - Sam: just pushed to main sorry
+07/05/2026, 11:58 - Alex: have you started studying yet?
+07/05/2026, 12:00 - Sam: the wifi in the library is criminal
+07/05/2026, 12:00 - Alex: should we start that project
+07/05/2026, 12:01 - Sam: how was your day
+07/05/2026, 12:02 - Alex: the campus tour was actually fun
+07/05/2026, 12:04 - Sam: goodnight
+09/05/2026, 06:53 - Alex: hii lol 💀
+09/05/2026, 06:55 - Sam: did you finish the assignment
+09/05/2026, 07:11 - Alex: the wifi in the library is criminal
+09/05/2026, 07:31 - Sam: i think i finally understand recursion
+09/05/2026, 08:11 - Alex: 🔥🔥
+09/05/2026, 08:18 - Sam: i pulled an all nighter oops
+09/05/2026, 08:54 - Sam: we should build something this weekend
+09/05/2026, 09:40 - Alex: wanna grab food later
+09/05/2026, 09:53 - Sam: what time works for you?
+09/05/2026, 09:58 - Sam: www.example.edu/deadlines
+09/05/2026, 10:30 - Alex: how was your day
+09/05/2026, 10:48 - Sam: reading week cannot come soon enough
+09/05/2026, 11:18 - Alex: check this out https://example.com/thing
+09/05/2026, 11:29 - Alex: wanna call?
+09/05/2026, 11:33 - Alex: have you started studying yet?
+09/05/2026, 12:09 - Alex: www.example.edu/deadlines
+09/05/2026, 12:41 - Alex: coffee is the only thing keeping me alive
+09/05/2026, 12:53 - Sam: i can't stop thinking about this idea
+09/05/2026, 13:06 - Sam: okay this is fire
+09/05/2026, 13:36 - Alex: did you see the email?
+09/05/2026, 13:56 - Sam: is the deadline friday or monday?
+09/05/2026, 14:42 - Sam: www.example.edu/deadlines
+09/05/2026, 14:45 - Sam: i'm literally so hyped
+09/05/2026, 14:50 - Alex: LETS GOOO
+09/05/2026, 15:33 - Alex: what time works for you?
+09/05/2026, 15:44 - Alex: image omitted
+09/05/2026, 16:05 - Sam: we should build something this weekend
+09/05/2026, 16:33 - Alex: the repo is at https://github.com/example/project
+09/05/2026, 17:16 - Alex: wait what did you mean by that?
+09/05/2026, 17:31 - Sam: <Media omitted>
+09/05/2026, 18:05 - Alex: STOP that's amazing
+09/05/2026, 18:41 - Sam: coffee is the only thing keeping me alive
+09/05/2026, 19:14 - Alex: i can't stop thinking about this idea
+09/05/2026, 19:27 - Sam: coffee is the only thing keeping me alive
+09/05/2026, 19:41 - Sam: okay this is fire
+09/05/2026, 19:50 - Alex: reading week cannot come soon enough
+09/05/2026, 19:59 - Sam: are you free tonight?
+09/05/2026, 19:59 - Sam: have you started studying yet?
+09/05/2026, 20:35 - Alex: i pulled an all nighter oops
+09/05/2026, 20:44 - Alex: are you free tonight?
+09/05/2026, 21:09 - Sam: are you free tonight?
+09/05/2026, 21:12 - Sam: the wifi in the library is criminal
+09/05/2026, 21:19 - Sam: STOP that's amazing
+09/05/2026, 21:44 - Alex: LETS GOOO
+09/05/2026, 22:19 - Alex: www.example.edu/deadlines
+09/05/2026, 22:58 - Alex: i keep getting merge conflicts
+09/05/2026, 23:47 - Alex: are you free tonight?
+10/05/2026, 00:00 - Alex: should we meet at the union?
+10/05/2026, 00:24 - Alex: <Media omitted>
+10/05/2026, 01:13 - Alex: <Media omitted>
+10/05/2026, 01:49 - Alex: how was your day
+10/05/2026, 02:24 - Alex: i pulled an all nighter oops
+10/05/2026, 02:57 - Alex: the wifi in the library is criminal
+10/05/2026, 03:17 - Alex: should we start that project
+10/05/2026, 03:28 - Sam: did you see the email?
+10/05/2026, 03:47 - Alex: 🔥🔥
+10/05/2026, 04:11 - Sam: wait what did you mean by that?
+10/05/2026, 04:20 - Sam: i pulled an all nighter oops
+10/05/2026, 05:00 - Sam: the wifi in the library is criminal
+10/05/2026, 05:18 - Alex: i'm literally so hyped
+10/05/2026, 06:04 - Alex: wanna grab food later
+10/05/2026, 06:17 - Alex: no way that's insane
+10/05/2026, 06:24 - Alex: i can't stop thinking about this idea
+10/05/2026, 07:14 - Alex: i'm literally so hyped
+10/05/2026, 07:53 - Alex: did you finish the assignment
+09/05/2026, 10:05 - Alex: hey the demo actually worked first try
+09/05/2026, 10:15 - Alex: wait what did you mean by that?
+09/05/2026, 10:18 - Alex: have you started studying yet?
+09/05/2026, 10:38 - Alex: found a bug in my own code again
+09/05/2026, 11:13 - Alex: STOP that's amazing
+09/05/2026, 11:35 - Alex: i've been debugging this for 2 hours
+09/05/2026, 12:25 - Sam: wait what did you mean by that?
+09/05/2026, 12:31 - Alex: did you finish the assignment
+09/05/2026, 13:07 - Sam: how was your day
+09/05/2026, 13:22 - Sam: that's actually huge
+09/05/2026, 14:02 - Alex: found a bug in my own code again
+09/05/2026, 14:25 - Sam: no way that's insane
+09/05/2026, 15:14 - Alex: are you free tonight?
+09/05/2026, 15:14 - Alex: i can't stop thinking about this idea
+09/05/2026, 15:55 - Alex: the professor lowkey ate today
+09/05/2026, 16:20 - Sam: the repo is at https://github.com/example/project
+09/05/2026, 16:40 - Alex: found a bug in my own code again
+09/05/2026, 17:09 - Sam: the campus tour was actually fun
+09/05/2026, 17:31 - Sam: i'm literally so hyped
+09/05/2026, 17:50 - Sam: this lecture was so dry ngl
+09/05/2026, 18:14 - Sam: the professor lowkey ate today
+09/05/2026, 18:59 - Sam: that's actually huge
+09/05/2026, 19:08 - Sam: did you see the email?
+09/05/2026, 19:14 - Alex: have you started studying yet?
+09/05/2026, 19:36 - Alex: should we meet at the union?
+09/05/2026, 19:53 - Alex: i can't stop thinking about this idea
+09/05/2026, 20:30 - Sam: we should build something this weekend
+09/05/2026, 21:07 - Sam: 🔥🔥
+09/05/2026, 21:55 - Sam: the repo is at https://github.com/example/project
+09/05/2026, 22:21 - Sam: just pushed to main sorry
+09/05/2026, 22:30 - Alex: gtg
+16/05/2026, 22:30 - Sam: hii i think i finally understand recursion
+16/05/2026, 22:37 - Alex: i can't stop thinking about this idea
+16/05/2026, 22:42 - Alex: i'm literally so hyped
+16/05/2026, 22:47 - Alex: i keep getting merge conflicts
+16/05/2026, 23:01 - Alex: i got the internship!!
+16/05/2026, 23:13 - Alex: wait what did you mean by that?
+16/05/2026, 23:19 - Alex: did you see the email?
+16/05/2026, 23:34 - Alex: the demo actually worked first try
+16/05/2026, 23:43 - Alex: the campus tour was actually fun
+16/05/2026, 23:54 - Alex: should we meet at the union?
+17/05/2026, 00:08 - Alex: i can't stop thinking about this idea
+17/05/2026, 00:14 - Alex: did you finish the assignment
+17/05/2026, 00:25 - Alex: the demo actually worked first try
+17/05/2026, 00:35 - Sam: www.example.edu/deadlines
+17/05/2026, 00:39 - Alex: wanna call?
+17/05/2026, 00:40 - Sam: lol 💀
+17/05/2026, 00:55 - Sam: what time works for you?
+17/05/2026, 01:01 - Alex: the demo actually worked first try
+17/05/2026, 01:12 - Alex: we should build something this weekend
+17/05/2026, 01:21 - Alex: i can't stop thinking about this idea
+17/05/2026, 01:35 - Alex: <Media omitted>
+17/05/2026, 01:50 - Alex: this lecture was so dry ngl
+17/05/2026, 01:56 - Alex: we should build something this weekend
+19/05/2026, 23:20 - Alex: omg coffee is the only thing keeping me alive
+19/05/2026, 23:20 - Alex: i think i finally understand recursion
+19/05/2026, 23:31 - Alex: is the deadline friday or monday?
+19/05/2026, 23:54 - Sam: i pulled an all nighter oops
+22/05/2026, 18:48 - Sam: guess what coffee is the only thing keeping me alive
+22/05/2026, 19:07 - Alex: the campus tour was actually fun
+22/05/2026, 19:46 - Sam: coffee is the only thing keeping me alive
+22/05/2026, 20:33 - Alex: this lecture was so dry ngl
+22/05/2026, 21:03 - Sam: should we start that project
+25/05/2026, 01:11 - Sam: bro we should build something this weekend
+25/05/2026, 01:18 - Sam: check this out https://example.com/thing
+25/05/2026, 01:30 - Alex: reading week cannot come soon enough
+25/05/2026, 02:10 - Alex: this lecture was so dry ngl
+25/05/2026, 02:29 - Alex: wanna call?
+25/05/2026, 02:36 - Sam: wanna grab food later
+25/05/2026, 02:47 - Alex: i got the internship!!
+25/05/2026, 03:33 - Alex: i think i finally understand recursion
+25/05/2026, 03:42 - Alex: wait what did you mean by that?
+25/05/2026, 04:29 - Alex: i think i finally understand recursion
+25/05/2026, 05:11 - Alex: are you free tonight?
+25/05/2026, 05:43 - Sam: i've been debugging this for 2 hours
+25/05/2026, 05:45 - Sam: just pushed to main sorry
+25/05/2026, 06:05 - Sam: did you finish the assignment
+25/05/2026, 06:17 - Alex: that's actually huge
+25/05/2026, 06:28 - Alex: did you see the email?
+25/05/2026, 07:13 - Sam: image omitted
+25/05/2026, 07:21 - Sam: the demo actually worked first try
+25/05/2026, 07:59 - Sam: haha 😂
+25/05/2026, 08:09 - Alex: 🔥🔥
+25/05/2026, 08:52 - Alex: reading week cannot come soon enough
+25/05/2026, 09:27 - Sam: brb class
+27/05/2026, 07:30 - Alex: omg i think i finally understand recursion
+27/05/2026, 07:57 - Sam: just pushed to main sorry
+27/05/2026, 08:35 - Alex: i've been debugging this for 2 hours
+27/05/2026, 09:24 - Sam: the wifi in the library is criminal
+27/05/2026, 09:32 - Sam: the demo actually worked first try
+27/05/2026, 09:50 - Sam: did you finish the assignment
+27/05/2026, 10:20 - Alex: just pushed to main sorry
+27/05/2026, 10:21 - Alex: how was your day
+27/05/2026, 10:26 - Sam: image omitted
+27/05/2026, 10:54 - Alex: LETS GOOO
+27/05/2026, 11:43 - Sam: 😭😭😭 real
+27/05/2026, 12:18 - Alex: is the deadline friday or monday?
+27/05/2026, 12:33 - Sam: i can't stop thinking about this idea
+01/06/2026, 03:25 - Sam: so we should build something this weekend
+01/06/2026, 03:37 - Sam: wanna call?
+01/06/2026, 03:41 - Sam: what time works for you?
+01/06/2026, 04:30 - Alex: image omitted
+01/06/2026, 04:34 - Alex: should we start that project
+01/06/2026, 04:53 - Alex: the campus tour was actually fun
+01/06/2026, 05:41 - Sam: the demo actually worked first try
+01/06/2026, 06:17 - Sam: the repo is at https://github.com/example/project
+01/06/2026, 06:54 - Alex: found a bug in my own code again
+01/06/2026, 07:02 - Alex: i can't stop thinking about this idea
+01/06/2026, 07:44 - Alex: i pulled an all nighter oops
+01/06/2026, 07:52 - Sam: STOP that's amazing
+01/06/2026, 08:15 - Sam: i think i finally understand recursion
+01/06/2026, 08:52 - Sam: i pulled an all nighter oops
+01/06/2026, 09:36 - Alex: should we start that project
+01/06/2026, 09:58 - Alex: i got the internship!!
+01/06/2026, 09:59 - Sam: what time works for you?
+01/06/2026, 10:39 - Sam: should we meet at the union?
+01/06/2026, 11:24 - Alex: i think i finally understand recursion
+01/06/2026, 11:51 - Alex: okay this is fire
+01/06/2026, 12:20 - Sam: image omitted
+01/06/2026, 12:27 - Alex: wanna grab food later
+01/06/2026, 12:44 - Alex: wanna grab food later
+01/06/2026, 12:57 - Alex: wanna grab food later
+01/06/2026, 13:33 - Sam: coffee is the only thing keeping me alive
+01/06/2026, 14:01 - Alex: the wifi in the library is criminal
+01/06/2026, 14:13 - Sam: lol 💀
+01/06/2026, 14:24 - Alex: i pulled an all nighter oops
+01/06/2026, 15:12 - Sam: www.example.edu/deadlines
+01/06/2026, 15:45 - Alex: okay this is fire
+01/06/2026, 15:51 - Sam: what time works for you?
+01/06/2026, 16:37 - Alex: what time works for you?
+01/06/2026, 16:51 - Alex: what time works for you?
+01/06/2026, 17:04 - Sam: 😭😭😭 real
+01/06/2026, 17:18 - Sam: are you free tonight?
+01/06/2026, 17:29 - Alex: should we start that project
+01/06/2026, 18:04 - Alex: yesss 🙌
+01/06/2026, 18:20 - Sam: 🔥🔥
+01/06/2026, 18:43 - Sam: we should build something this weekend
+01/06/2026, 19:26 - Sam: the repo is at https://github.com/example/project
+01/06/2026, 20:09 - Sam: did you finish the assignment
+01/06/2026, 20:30 - Alex: wait what did you mean by that?
+01/06/2026, 21:10 - Sam: wait what did you mean by that?
+01/06/2026, 21:26 - Alex: the professor lowkey ate today
+01/06/2026, 21:47 - Alex: no way that's insane
+01/06/2026, 22:00 - Sam: i'm literally so hyped
+01/06/2026, 22:01 - Alex: what time works for you?
+01/06/2026, 22:44 - Alex: i think i finally understand recursion
+01/06/2026, 22:52 - Sam: should we start that project
+01/06/2026, 23:09 - Sam: haha 😂
+01/06/2026, 23:40 - Sam: the demo actually worked first try
+04/06/2026, 08:33 - Sam: yo haha 😂
+04/06/2026, 08:47 - Sam: i've been debugging this for 2 hours
+04/06/2026, 08:52 - Alex: wait what did you mean by that?
+04/06/2026, 09:15 - Alex: the professor lowkey ate today
+04/06/2026, 10:03 - Alex: this lecture was so dry ngl
+04/06/2026, 10:22 - Alex: wait what did you mean by that?
+04/06/2026, 10:24 - Alex: i've been debugging this for 2 hours
+04/06/2026, 10:37 - Alex: should we meet at the union?
+04/06/2026, 11:14 - Alex: lol 💀
+04/06/2026, 11:52 - Alex: is the deadline friday or monday?
+04/06/2026, 12:15 - Alex: i keep getting merge conflicts
+04/06/2026, 12:31 - Alex: should we start that project
+04/06/2026, 12:40 - Alex: coffee is the only thing keeping me alive
+04/06/2026, 13:27 - Sam: are you free tonight?
+04/06/2026, 13:39 - Sam: the professor lowkey ate today
+04/06/2026, 14:12 - Sam: the professor lowkey ate today
+04/06/2026, 14:50 - Sam: the repo is at https://github.com/example/project
+04/06/2026, 15:20 - Sam: 😭😭😭 real
+04/06/2026, 16:03 - Alex: <Media omitted>
+04/06/2026, 16:12 - Alex: the professor lowkey ate today
+04/06/2026, 16:35 - Alex: image omitted
+04/06/2026, 17:06 - Sam: i think i finally understand recursion
+04/06/2026, 17:08 - Sam: did you finish the assignment
+04/06/2026, 17:53 - Sam: i got the internship!!
+04/06/2026, 18:08 - Alex: i've been debugging this for 2 hours
+04/06/2026, 18:18 - Sam: how was your day
+04/06/2026, 18:38 - Alex: is the deadline friday or monday?
+04/06/2026, 19:24 - Alex: did you finish the assignment
+04/06/2026, 19:44 - Sam: the wifi in the library is criminal
+04/06/2026, 20:24 - Sam: wanna grab food later
+04/06/2026, 20:51 - Alex: the repo is at https://github.com/example/project
+04/06/2026, 21:14 - Alex: 😭😭😭 real
+04/06/2026, 22:03 - Alex: this lecture was so dry ngl
+04/06/2026, 22:34 - Sam: we should build something this weekend
+04/06/2026, 23:09 - Sam: should we meet at the union?
+04/06/2026, 23:17 - Alex: i got the internship!!
+04/06/2026, 23:24 - Alex: aw 🥹
+04/06/2026, 23:32 - Sam: sticker omitted
+05/06/2026, 00:07 - Alex: i keep getting merge conflicts
+05/06/2026, 00:09 - Sam: i can't stop thinking about this idea
+05/06/2026, 00:46 - Alex: how was your day
+05/06/2026, 01:20 - Alex: lol 💀
+05/06/2026, 02:07 - Alex: aw 🥹
+05/06/2026, 02:34 - Alex: i keep getting merge conflicts
+05/06/2026, 02:43 - Alex: have you started studying yet?
+05/06/2026, 02:51 - Sam: we should build something this weekend
+05/06/2026, 03:12 - Sam: should we start that project
+05/06/2026, 03:55 - Alex: how was your day
+05/06/2026, 04:15 - Sam: should we start that project
+05/06/2026, 04:51 - Sam: aw 🥹
+05/06/2026, 05:13 - Sam: the wifi in the library is criminal
+05/06/2026, 05:55 - Alex: lol 💀
+05/06/2026, 06:22 - Sam: brb class
+04/06/2026, 18:40 - Sam: wait reading week cannot come soon enough
+04/06/2026, 18:48 - Sam: www.example.edu/deadlines
+04/06/2026, 19:32 - Alex: the wifi in the library is criminal
+04/06/2026, 19:35 - Sam: wanna call?
+04/06/2026, 20:05 - Sam: aw 🥹
+04/06/2026, 20:32 - Sam: okay this is fire
+04/06/2026, 21:22 - Alex: wait what did you mean by that?
+04/06/2026, 21:29 - Alex: i think i finally understand recursion
+04/06/2026, 22:14 - Sam: how was your day
+04/06/2026, 22:17 - Sam: i pulled an all nighter oops
+04/06/2026, 22:56 - Alex: wanna call?
+04/06/2026, 22:58 - Sam: wanna call?
+04/06/2026, 23:34 - Alex: check this out https://example.com/thing
+05/06/2026, 00:12 - Sam: i'm literally so hyped
+05/06/2026, 00:41 - Sam: LETS GOOO
+05/06/2026, 01:15 - Alex: should we meet at the union?
+05/06/2026, 01:58 - Sam: i think i finally understand recursion
+05/06/2026, 02:10 - Sam: coffee is the only thing keeping me alive
+05/06/2026, 02:18 - Alex: found a bug in my own code again
+05/06/2026, 03:05 - Sam: the wifi in the library is criminal
+05/06/2026, 03:23 - Sam: did you see the email?
+05/06/2026, 04:00 - Sam: reading week cannot come soon enough
+05/06/2026, 04:39 - Alex: check this out https://example.com/thing
+05/06/2026, 04:43 - Sam: that's actually huge
+05/06/2026, 04:51 - Sam: wanna call?
+05/06/2026, 05:34 - Alex: i think i finally understand recursion
+05/06/2026, 06:11 - Sam: i've been debugging this for 2 hours
+05/06/2026, 06:22 - Sam: the campus tour was actually fun
+05/06/2026, 07:08 - Alex: should we start that project
+05/06/2026, 07:53 - Alex: 😭😭😭 real
+05/06/2026, 08:27 - Alex: i pulled an all nighter oops
+05/06/2026, 09:03 - Alex: check this out https://example.com/thing
+05/06/2026, 09:10 - Sam: found a bug in my own code again
+05/06/2026, 09:11 - Alex: 😭😭😭 real
+05/06/2026, 09:58 - Sam: www.example.edu/deadlines
+05/06/2026, 10:41 - Alex: ok cya
+07/06/2026, 19:14 - Alex: bro we should build something this weekend
+07/06/2026, 19:43 - Sam: www.example.edu/deadlines
+07/06/2026, 19:49 - Alex: we should build something this weekend
+07/06/2026, 20:30 - Sam: ttyl
+11/06/2026, 09:02 - Alex: hii okay this is fire
+11/06/2026, 09:14 - Sam: just pushed to main sorry
+11/06/2026, 09:59 - Alex: did you see the email?
+14/06/2026, 02:53 - Sam: you up? lol 💀
+14/06/2026, 03:28 - Alex: wanna call?
+14/06/2026, 03:31 - Sam: did you finish the assignment
+14/06/2026, 03:34 - Alex: the wifi in the library is criminal
+14/06/2026, 03:52 - Alex: lol 💀
+14/06/2026, 04:10 - Alex: the demo actually worked first try
+14/06/2026, 04:32 - Alex: this lecture was so dry ngl
+14/06/2026, 05:12 - Sam: lol 💀
+14/06/2026, 05:39 - Alex: lol 💀
+14/06/2026, 05:47 - Alex: how was your day
+14/06/2026, 05:52 - Sam: i think i finally understand recursion
+14/06/2026, 06:04 - Sam: i pulled an all nighter oops
+14/06/2026, 06:20 - Alex: image omitted
+14/06/2026, 07:03 - Sam: i pulled an all nighter oops
+14/06/2026, 07:07 - Sam: wait what did you mean by that?
+14/06/2026, 07:11 - Alex: i've been debugging this for 2 hours
+14/06/2026, 07:16 - Sam: the professor lowkey ate today
+14/06/2026, 07:57 - Alex: check this out https://example.com/thing
+14/06/2026, 08:12 - Alex: wanna grab food later
+14/06/2026, 08:56 - Sam: i'm literally so hyped
+14/06/2026, 09:17 - Alex: i can't stop thinking about this idea
+14/06/2026, 09:24 - Alex: what time works for you?
+14/06/2026, 10:14 - Alex: the repo is at https://github.com/example/project
+14/06/2026, 10:34 - Alex: www.example.edu/deadlines
+14/06/2026, 10:45 - Sam: ok cya
+15/06/2026, 19:15 - Sam: quick q just pushed to main sorry
+15/06/2026, 19:15 - Sam: i pulled an all nighter oops
+15/06/2026, 20:02 - Alex: wait what did you mean by that?
+15/06/2026, 20:44 - Alex: is the deadline friday or monday?
+15/06/2026, 21:32 - Alex: are you free tonight?
+22/06/2026, 08:49 - Alex: wait reading week cannot come soon enough
+22/06/2026, 09:25 - Sam: 😭😭😭 real
+22/06/2026, 10:13 - Sam: this lecture was so dry ngl
+22/06/2026, 10:44 - Alex: wanna call?
+22/06/2026, 10:48 - Alex: image omitted
+22/06/2026, 11:09 - Sam: check this out https://example.com/thing
+22/06/2026, 11:49 - Sam: wanna call?
+22/06/2026, 12:36 - Alex: i pulled an all nighter oops
+22/06/2026, 13:14 - Alex: i pulled an all nighter oops
+22/06/2026, 13:27 - Sam: haha 😂
+22/06/2026, 14:12 - Alex: the demo actually worked first try
+22/06/2026, 14:56 - Sam: i pulled an all nighter oops
+24/06/2026, 08:25 - Sam: quick q 🔥🔥
+24/06/2026, 08:40 - Alex: 🔥🔥
+24/06/2026, 09:29 - Sam: gtg
+25/06/2026, 06:26 - Alex: random but i got the internship!!
+25/06/2026, 06:28 - Sam: www.example.edu/deadlines
+26/06/2026, 08:54 - Alex: yo that's actually huge
+26/06/2026, 09:15 - Alex: i keep getting merge conflicts
+26/06/2026, 09:55 - Alex: should we start that project
+26/06/2026, 10:09 - Alex: 😭😭😭 real
+26/06/2026, 10:49 - Sam: wait what did you mean by that?
+26/06/2026, 11:03 - Sam: found a bug in my own code again
+26/06/2026, 11:04 - Sam: should we meet at the union?
+26/06/2026, 11:20 - Alex: did you see the email?
+26/06/2026, 12:05 - Sam: the repo is at https://github.com/example/project
+26/06/2026, 12:38 - Alex: 🔥🔥
+26/06/2026, 12:44 - Sam: i keep getting merge conflicts
+26/06/2026, 12:52 - Sam: wanna call?
+26/06/2026, 13:00 - Alex: should we start that project
+26/06/2026, 13:13 - Alex: are you free tonight?
+26/06/2026, 13:45 - Sam: check this out https://example.com/thing
+26/06/2026, 13:53 - Sam: reading week cannot come soon enough
+26/06/2026, 14:19 - Alex: that's actually huge
+26/06/2026, 15:00 - Sam: just pushed to main sorry
+26/06/2026, 15:07 - Sam: this lecture was so dry ngl
+26/06/2026, 15:12 - Sam: how was your day
+26/06/2026, 15:42 - Alex: image omitted
+27/06/2026, 07:37 - Sam: guess what www.example.edu/deadlines
+27/06/2026, 07:38 - Sam: lol 💀
+27/06/2026, 08:01 - Sam: i'm literally so hyped
+27/06/2026, 08:33 - Sam: i got the internship!!
+27/06/2026, 08:42 - Alex: no way that's insane
+27/06/2026, 08:57 - Sam: ttyl
+28/06/2026, 21:17 - Alex: bro this lecture was so dry ngl
+28/06/2026, 22:27 - Sam: should we meet at the union?
+28/06/2026, 23:37 - Alex: should we start that project
+29/06/2026, 00:49 - Sam: did you finish the assignment
+29/06/2026, 01:21 - Alex: should we start that project
+29/06/2026, 02:38 - Sam: i got the internship!!
+29/06/2026, 03:58 - Alex: 🔥🔥
+29/06/2026, 05:12 - Sam: lol 💀
+29/06/2026, 06:18 - Alex: found a bug in my own code again
+29/06/2026, 07:30 - Sam: should we start that project
+29/06/2026, 08:06 - Alex: the demo actually worked first try
+29/06/2026, 08:44 - Sam: is the deadline friday or monday?
+29/06/2026, 09:29 - Alex: no way that's insane
+29/06/2026, 10:57 - Sam: aw 🥹
+29/06/2026, 12:20 - Alex: the demo actually worked first try
+29/06/2026, 13:40 - Sam: i got the internship!!
+29/06/2026, 14:25 - Alex: haha 😂

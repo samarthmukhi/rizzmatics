@@ -29,6 +29,8 @@ __all__ = [
     "extract_features",
     "build_feature_frame",
     "FEATURE_NAMES",
+    "ALL_FEATURES",
+    "FEATURE_GROUPS",
     "count_emojis",
     "is_media_message",
 ]
@@ -107,6 +109,37 @@ _CONTEXT_FEATURES = [
     "rolling_msg_volume",
     "rolling_session_frequency_7d",
 ]
+
+# Every feature the model ever sees, in canonical order.
+ALL_FEATURES: list[str] = FEATURE_NAMES + _CONTEXT_FEATURES
+
+# Signal families, used by the ablation and robustness studies. Together these
+# partition ALL_FEATURES exactly (no overlaps, no omissions) — enforced by
+# tests/test_research_ablation.py so the study can't silently drop a feature.
+FEATURE_GROUPS: dict[str, list[str]] = {
+    "volume": [
+        "n_messages", "total_chars", "mean_msg_len",
+        "median_msg_len", "max_msg_len",
+    ],
+    "participation": [
+        "n_participants", "participation_balance", "max_participation_share",
+        "n_runs", "mean_run_length", "back_and_forth_rate",
+    ],
+    "response_latency": [
+        "median_response_latency_s", "mean_response_latency_s",
+        "p90_response_latency_s", "frac_replies_within_threshold",
+    ],
+    "linguistic": [
+        "total_words", "mean_words_per_msg", "question_rate",
+        "exclamation_rate", "emoji_count", "emoji_density",
+        "link_count", "media_count", "lexical_diversity",
+    ],
+    "temporal": [
+        "start_hour", "is_weekend", "is_late_night",
+        "hours_since_prev_session", "rolling_msg_volume",
+        "rolling_session_frequency_7d",
+    ],
+}
 
 _NAN = float("nan")
 
@@ -264,7 +297,9 @@ def build_feature_frame(
     Args:
         sessions: Detected sessions, in chronological order.
         prefix: If given, features are extracted from only the first ``prefix``
-            messages of each session (the leakage-safe "early portion"). If
+            messages of each session (the leakage-safe "early portion"). May be
+            an ``int`` (same cutoff for every session) or a callable
+            ``session -> int`` (per-session cutoff, e.g. "first 50%"). If
             ``None``, the whole session is used.
         latency_threshold_s: Passed through to :func:`extract_features`.
         rolling_k: Window size for the rolling message-volume feature, computed
@@ -281,7 +316,9 @@ def build_feature_frame(
     for i, session in enumerate(sessions):
         msgs = session.messages
         if prefix is not None:
-            msgs = msgs[:prefix]
+            # prefix may be a fixed int or a per-session callable (e.g. "half").
+            p = prefix(session) if callable(prefix) else prefix
+            msgs = msgs[:p]
         feats = extract_features(msgs, latency_threshold_s=latency_threshold_s)
         feats["session_id"] = session.session_id
 

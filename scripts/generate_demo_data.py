@@ -126,14 +126,90 @@ ARCHETYPES = [
     "transactional", "technical_deepdive", "uneven_participation",
 ]
 
+# --------------------------------------------------------------------------- #
+# GENERATOR METADATA — the circularity audit, machine-readable (Phase 16)
+# --------------------------------------------------------------------------- #
+# The single latent variable is the per-session ARCHETYPE. It jointly determines
+# message volume, the sender sequence (=> participation balance, back-and-forth,
+# runs) and the latency sequence (=> response-latency features and, via cumulative
+# timestamps, session duration). The engagement TARGET is a function of duration,
+# volume, bidirectional exchange, balance and persistence — i.e. it is downstream
+# of the SAME latent variable. That shared dependence is what makes prediction on
+# this data "easy": the model is largely recovering the hidden archetype from the
+# early messages. Message CONTENT and CALENDAR time are sampled independently of
+# the archetype, so linguistic/temporal features are (correctly) uninformative.
+#
+# `expected_informative` below is a falsifiable prediction; tests cross-check it
+# against the actual ablation results.
+GENERATOR_METADATA: dict = {
+    "latent_variable": "archetype",
+    "target_components": ["duration", "volume", "bidirectional", "balance", "persistence"],
+    "feature_dependencies": {
+        "volume": {
+            "generated_by": "archetype-specific message-count range",
+            "depends_on_latent": True, "target_uses": True, "expected_informative": True,
+        },
+        "participation": {
+            "generated_by": "archetype-specific sender sequence",
+            "depends_on_latent": True, "target_uses": True, "expected_informative": True,
+        },
+        "response_latency": {
+            "generated_by": "archetype-specific latency range",
+            "depends_on_latent": True, "target_uses": True,  # via session duration
+            "expected_informative": True,
+        },
+        "linguistic": {
+            "generated_by": "shared text pools, archetype-independent",
+            "depends_on_latent": False, "target_uses": False, "expected_informative": False,
+        },
+        "temporal": {
+            "generated_by": "random start hour / calendar day, archetype-independent",
+            "depends_on_latent": False, "target_uses": False, "expected_informative": False,
+        },
+    },
+    "circularity": (
+        "Features and target share the archetype as a common cause, so high "
+        "performance demonstrates that the pipeline recovers structured "
+        "relationships in THIS generated environment. It does not establish "
+        "generalization to real human conversations."
+    ),
+    "modes": {
+        "structured": "Default. Strong, clean archetype signal (audit above).",
+        "noisy": "Archetype params overlap and ~60% of sessions have their "
+                 "sender/latency structure scrambled, weakening the latent->feature "
+                 "link so the pipeline should degrade gracefully (but not to chance).",
+    },
+}
+
+
+def _corrupt(rng: random.Random, senders: list, latencies: list) -> tuple[list, list]:
+    """Weaken the latent->feature link for the 'noisy' generator mode.
+
+    Replaces the archetype's structured sender pattern with near-random turns
+    and redraws latencies from a wide common distribution, so participation and
+    response-latency signals no longer cleanly encode the archetype.
+    """
+    scrambled_senders = [rng.choice(PARTICIPANTS) for _ in senders]
+    scrambled_latencies = [rng.randint(10, 3000) for _ in latencies]
+    return scrambled_senders, scrambled_latencies
+
 
 def _fmt(ts: datetime, sender: str, text: str) -> str:
     """Android-style WhatsApp line: DD/MM/YYYY, HH:MM - Sender: text."""
     return f"{ts.strftime('%d/%m/%Y, %H:%M')} - {sender}: {text}"
 
 
-def generate_export(seed: int = 42, days: int = 90, start: datetime | None = None) -> str:
-    """Generate a full synthetic WhatsApp export as a single string."""
+def generate_export(seed: int = 42, days: int = 90, start: datetime | None = None,
+                    mode: str = "structured") -> str:
+    """Generate a full synthetic WhatsApp export as a single string.
+
+    Args:
+        mode: ``"structured"`` (default) for a clean archetype signal, or
+            ``"noisy"`` to scramble ~60% of sessions' structure (see
+            ``GENERATOR_METADATA["modes"]``).
+    """
+    if mode not in ("structured", "noisy"):
+        raise ValueError("mode must be 'structured' or 'noisy'")
     rng = random.Random(seed)
     start = start or datetime(2026, 4, 1, 9, 0)
 
@@ -155,6 +231,8 @@ def generate_export(seed: int = 42, days: int = 90, start: datetime | None = Non
 
         kind = rng.choice(ARCHETYPES)
         senders, latencies = _archetype(rng, kind)
+        if mode == "noisy" and rng.random() < 0.6:
+            senders, latencies = _corrupt(rng, senders, latencies)
 
         # Start the session at a plausible hour.
         hour = rng.choice([9, 11, 13, 15, 17, 19, 21, 22, 23, 0, 1])
@@ -185,15 +263,26 @@ def main() -> None:
 
     args.out.mkdir(parents=True, exist_ok=True)
 
-    # A rich export for the full experience.
+    # A rich, strongly-structured export for the full experience.
     main_path = args.out / "demo_chat.txt"
-    main_path.write_text(generate_export(seed=args.seed, days=args.days), encoding="utf-8")
+    main_path.write_text(
+        generate_export(seed=args.seed, days=args.days, mode="structured"),
+        encoding="utf-8")
 
     # A deliberately tiny one to demo the "bro, you gave me 14 conversations" path.
     small_path = args.out / "demo_small.txt"
-    small_path.write_text(generate_export(seed=args.seed + 1, days=12), encoding="utf-8")
+    small_path.write_text(
+        generate_export(seed=args.seed + 1, days=12, mode="structured"),
+        encoding="utf-8")
 
-    for p in (main_path, small_path):
+    # A noisy variant with weakened latent->feature links (Phase 16). Used to show
+    # the pipeline degrades gracefully rather than manufacturing signal.
+    noisy_path = args.out / "demo_chat_noisy.txt"
+    noisy_path.write_text(
+        generate_export(seed=args.seed + 2, days=args.days, mode="noisy"),
+        encoding="utf-8")
+
+    for p in (main_path, small_path, noisy_path):
         n_lines = p.read_text(encoding="utf-8").count("\n")
         print(f"✓ wrote {p.relative_to(REPO_ROOT)}  ({n_lines} lines)")
 
