@@ -1,0 +1,44 @@
+# ── Rizzmatics privacy firewall ──────────────────────────────────
+# Real conversations NEVER leave your machine. If it looks like data,
+# it does not get committed. The public repo ships synthetic demos only.
+*.txt
+*.csv
+*.json
+/data/*
+/raw/
+/processed/
+
+# ...but we DO want the synthetic demo data to ship. Re-include the demo
+# directory FIRST, then the files under it (git can't un-ignore a file whose
+# parent directory is still excluded — order and the leading `!dir/` matter).
+!/data/demo/
+!/data/demo/**
+
+# requirements.txt happens to end in .txt but is not chat data — keep it.
+!/requirements.txt
+
+# ── Python ───────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+
+# ── Environments ─────────────────────────────────────────────────
+.venv/
+venv/
+env/
+.env
+
+# ── OS / editor cruft ────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+*.swp

@@ -1,0 +1,10 @@
+[tool.pytest.ini_options]
+# Let tests do `from src.parser import ...` without an install step.
+pythonpath = ["."]
+testpaths = ["tests"]
+addopts = "-q"
+
+[tool.rizzmatics]
+# Not load-bearing; just here so the repo reads like it means business.
+overengineering = "enterprise-grade"
+actual_necessity = 0.0

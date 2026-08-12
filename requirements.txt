@@ -1,0 +1,22 @@
+# Rizzmatics — enterprise-grade overthinking, dependency edition.
+# Core numerics
+pandas>=2.0
+numpy>=1.24
+scipy>=1.10
+
+# The machine that will confidently misjudge your love life
+scikit-learn>=1.3
+
+# Making the vibes visible
+matplotlib>=3.7
+plotly>=5.18
+
+# The Executive Dashboard(TM)
+streamlit>=1.30
+
+# Proving we did not, in fact, make it all up
+pytest>=7.4
+
+# Optional: explainability with SHAP. Uncomment if you want the Oracle
+# to show its work. Everything degrades gracefully without it.
+# shap>=0.44
